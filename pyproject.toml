@@ -5,7 +5,9 @@ description = "A FastAPI application that accepts a first name and last name, an
 authors = ["Luis Carlos Rodriguez <luis.carlos.rb97@gmail.com>"]
 readme = "README.md"
 license = "UNAL"
-package-mode = false
+packages = [
+    { include = "main.py", from = "src"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
